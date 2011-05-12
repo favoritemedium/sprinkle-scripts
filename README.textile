@@ -13,3 +13,7 @@ komplette Rails-Umgebung:
 * MySQL
 * Ruby 1.9.2 (über RVM)
 * ImageMagick
+
+Außerdem richtet Sprinkle für mich einen Benutzer an ("diana", hier fest eingegeben) und ändert die MySQL Passwörter.
+Auf einem frischen Ubuntu 10.4 LTS Server dauert die komplette Installation etwa 15 Minuten, was hauptsächlich am Kompilieren
+von Passenger und Ruby liegt. Ubuntu bietet nur Ruby 1.8.7 und ich brauche 1.9.2.
