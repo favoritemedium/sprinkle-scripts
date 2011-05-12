@@ -1,0 +1,14 @@
+h1. Sprinkle Skripte für Projekt Diana
+
+Von Lorenz Kitzmann, basierend auf der "offiziellen Dokumentation":https://github.com/crafterm/sprinkle .
+
+Sprinkle ist ein Tool welches automatisch Softwarepakete auf Linux/Unix Systemen installiert und einrichtet.
+Mit diesen Konfigurationsdateien installiere ich mit nur einem Befehl und etwa 15 Minuten Wartezeit eine
+komplette Rails-Umgebung:
+
+* nginx
+* Rails 3.0.7
+* git
+* MySQL
+* Ruby 1.9.2 (über RVM)
+* ImageMagick
