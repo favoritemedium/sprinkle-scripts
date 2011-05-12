@@ -7,6 +7,7 @@ Mit diesen Konfigurationsdateien installiere ich mit nur einem Befehl und etwa 1
 komplette Rails-Umgebung:
 
 * nginx
+* Passenger
 * Rails 3.0.7
 * git
 * MySQL
