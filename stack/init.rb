@@ -4,7 +4,7 @@ package :init do
   requires :no_exim
   requires :build_essential
   requires :imagemagick
-  requires :wkhtmltopdf
+  #requires :wkhtmltopdf
 end
 
 package :no_apache do

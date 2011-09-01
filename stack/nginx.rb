@@ -20,7 +20,7 @@ package :nginx, :provides => :webserver do
   noop do
     post :install, "sudo chmod +x /etc/init.d/nginx"
     post :install, "sudo /usr/sbin/update-rc.d -f nginx defaults"
-    post :install, "sudo /etc/init.d/apache2 stop"
+    #post :install, "sudo /etc/init.d/apache2 stop"
     post :install, "sudo /etc/init.d/nginx start; true"
     post :install, "sudo /etc/init.d/nginx reload"
   end
@@ -39,8 +39,8 @@ package :passenger do
   requires :libcurl4
 
   noop do
-    pre :install, "rvm exec gem install passenger --no-rdoc --no-ri"
-    post :install, "rvm exec passenger-install-nginx-module --auto --auto-download --prefix=/usr/local/nginx"
+    pre :install, "/usr/local/rvm/bin/rvm exec gem install passenger --no-rdoc --no-ri"
+    post :install, "/usr/local/rvm/bin/rvm exec passenger-install-nginx-module --auto --auto-download --prefix=/usr/local/nginx"
   end
 
   requires :ruby
